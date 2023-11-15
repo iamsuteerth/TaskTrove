@@ -62,8 +62,8 @@ class _OnBoardingState extends State<OnBoarding> {
                           color: AppConstants.kLight,
                         ),
                       ),
-                      const SizedBox(
-                        width: 5,
+                      SizedBox(
+                        width: 5.w,
                       ),
                       ReusableText(
                         text: "Skip",

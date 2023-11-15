@@ -16,4 +16,5 @@ class AppConstants {
 
   static double kWidth = 375.w;
   static double kHeight = 375.h;
+  static double kRadius = 12.h;
 }

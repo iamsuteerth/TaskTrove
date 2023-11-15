@@ -23,8 +23,8 @@ class PageOne extends StatelessWidget {
               'assets/images/todo.png',
             ),
           ),
-          const SizedBox(
-            height: 100,
+          SizedBox(
+            height: 100.h,
           ),
           Column(
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -37,8 +37,8 @@ class PageOne extends StatelessWidget {
                   FontWeight.w600,
                 ),
               ),
-              const SizedBox(
-                height: 10,
+              SizedBox(
+                height: 10.h,
               ),
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 30.w),
