@@ -45,7 +45,14 @@ class CustomTextField extends StatelessWidget {
         decoration: InputDecoration(
           hintText: hintText,
           suffixIcon: suffixIcon,
-          prefixIcon: prefixIcon,
+          prefixIcon: prefixIcon != null
+              ? CircleAvatar(
+                  // Fix because otherwise, the widget was not aligning properly
+                  radius: AppConstants.kWidth * 0.08,
+                  backgroundColor: Colors.transparent,
+                  child: prefixIcon,
+                )
+              : null,
           suffixIconColor: AppConstants.kbkDark,
           hintStyle: hintStyle,
           errorBorder: const OutlineInputBorder(
